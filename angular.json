@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Anguler-T2203E": {
+    "t2203e-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/anguler-t2203-e",
+            "outputPath": "dist/t2203e-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,13 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
-
+              "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -72,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Anguler-T2203E:build:production"
+              "browserTarget": "t2203e-angular:build:production"
             },
             "development": {
-              "browserTarget": "Anguler-T2203E:build:development"
+              "browserTarget": "t2203e-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Anguler-T2203E:build"
+            "browserTarget": "t2203e-angular:build"
           }
         },
         "test": {
@@ -107,6 +103,6 @@
     }
   },
   "cli": {
-    "analytics": "bdb80daa-763a-44af-a412-a2588f8eeefa"
+    "analytics": "13fae927-f561-4a7b-947f-3e895bcf3f88"
   }
 }
